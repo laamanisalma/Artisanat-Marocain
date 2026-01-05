@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addToCart</title>
+    <link rel="stylesheet" href="css/bootstrap.css"> 
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="css/pp.css"/>
+
+    <style>
+          
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+           
+
+        }
+        section{
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+         .container{
+            max-width: 500px;
+            width: 100%;
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 5px; 
+
+        }
+        .container .title{
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+        .container .title::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            
+            background-color: rgb(252, 145, 4);
+
+        }
+        .container form .user-details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+        form .user-details .input-box{
+            margin-bottom: 15px;
+            width: calc(100% /2 - 20px);
+        }
+        .user-details .input-box{
+            height: 45px;
+            width: 100%;
+        }
+        .user-details .input-box .details{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 10px;
+           
+        }
+        .user-details .input-box input{
+            height: 45;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width:2px;
+            transition: all 0.3s ease;
+        }
+        .user-details .input-box input:focus
+        /* .user-details .input-box input:valid*/{ 
+            border-color:rgb(251, 143, 2); 
+        }
+        form .gender-details .gender-title{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        form .gender-details .category{
+            display:flex;
+            width: 80%;
+            margin: 14px 0;
+            justify-content: space-between;
+        }
+         .gender-details .category label{
+             display: flex;
+             align-items: center;
+
+        }
+      span{color: #000;}
+      form .button{
+        height: 45px;
+        width: 45px;
+      }
+      form .button input{
+        height: 100%;
+        /* width: 100%; */
+        /* display: none; */
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        margin-left: 250px;
+        /* background-color: #71b7e6; */
+        background-color: rgb(250, 144, 4);
+      }
+      form .button input:hover{
+        background-color: rgb(91, 245, 9);
+      }
+      @media (max-width:584){
+      .container{
+            max-width: 100px;
+      }
+      form .user-details .input-box{
+            margin-bottom: 15px;
+            width:100%;
+          }
+      form .gender-details .category{
+          width: 100%;
+        }
+      .container form .user-details{
+          max-height: 300px;
+          overflow: scroll;
+        }
+        .user-details::-webkit-scrollbar{
+          width: 0;
+        }
+        }
+  </style>
+      
+</head>
+<body>
+  
+  <section id="banner" class="my-5 py-5">
+      <div class="container">
+        <div class="title">Entrer vos informations</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Entrer votre prenom</span>
+                    <input type="text" id="firstname" placeholder="Entrer votre prenom" >
+                </div>
+                <div class="input-box">
+                  <span class="details">Entrer votre nom</span>
+                  <input type="text" id="lastname" placeholder="Entrer votre nom" >
+              </div>
+              <div class="input-box">
+                  <span class="details" > Entrer votre email</span>
+                  <input type="text" id="email" placeholder="Entrer votre email">
+              </div>
+              <div class="input-box">
+                  <span class="details">Entrer votre num</span>
+                  <input type="tel" id="phone" placeholder="Entrer votre num">
+              </div>
+              <div class="input-box">
+                  <span class="details">pays</span>
+                  <input type="password" id="state" placeholder="Entrer votre pays"  >
+              </div>
+              <div class="input-box">
+                  <span class="details">ville</span>
+                  <input type="password" id="city" placeholder="Entrer votre ville">
+              </div>
+            </div>
+            <div class="gender-details">
+                <span class="gender-title">sex</span>
+                <div class="category">
+                    <label for="p">
+                        <span class="dot one"></span>
+                        <input type="radio" name="p">F</span> 
+                  </label>
+                  <label for="p">
+                      <!-- <span class="dot one"></span> -->
+                      <input type="radio" name="p">H</span>
+                </label>
+                 
+                </div>
+            </div>
+            <div class="button">
+               <input type="submit" value="confirm" id="confirm" onclick="Email()" > 
+            </div>
+        </form>
+    </div>
+</div>
+</section>
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form >
+        <div>
+         <h3>votre prouduits</h3>
+         <img src="image/savonniere-vague.jpg" width="100px" height="100px">
+         <h3 >nom  :<span>savonniere-vague</span></h3>
+         <h3>quantite :<span>3</span></h3>
+        <h3>prix total :<span>99.99$*3</span></h3>
+         <h3>pays  :<span>Maroc</span></h3>
+         <h3>ville  :<span>fes</span></h3>
+        </div>
+         
+         <a href="PRODAVT.HTML"><input type="button" value="Annullé" ><a href="#"></input></a>
+         
+    </form>
+
+</div>
+
+
+<script>
+  function Email(){
+  email=document.querySelector("#email").value;
+//   validemail=new RegExp("/^\W+([\.-]?\W+)*@\+([\.-]?\W+)*(\.\W{2,0})+$/");
+validemail=new RegExp("[a-z0-9]+@[a-z]{2,3}");
+  if(validemail.test(email)){
+  return true;
+  }
+  else{
+    document.querySelector("#email").style.color="red";
+  }
+}
+if(document.querySelector('#firstname').value=""){
+    document.querySelector('#firstname').style.borderclore='red';
+}
+
+</script>
+<script>
+var Btn = document.querySelector("#confirm");
+var login = document.querySelector('.login-form-container');
+var Close = document.querySelector('#form-close');
+
+Btn.addEventListener('click', function(){
+    login.classList.add('active'),true;
+});
+
+
+Close.addEventListener('click',function(){
+    login.classList.remove('active'),true;
+});
+        </script>
+        <style>
+    .login-form-container{
+    position: fixed;
+    top: -120%;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form-container form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    background: #fff;
+    width: 30rem; 
+}
+.login-form-container form img{
+    border: #44425A solid 1.5px;
+    border-radius: 5px;
+}
+.login-form-container span{
+    color: #44425A;
+}
+
+.login-form-container h3{
+    font-size: 1.5rem;
+    /* font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; */
+    color: rgb(20, 1, 1);
+    /* text-shadow: 1px 2px black; */
+    text-transform: uppercase; 
+    /* text-align: center; */
+    /* padding: 0.5rem ; */
+}
+.login-form-container form .box{
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin: .4rem .2rem;
+    border: 1px solid rgba(255, 123, 0, 0.879);
+    text-transform: none;
+    border-radius: 15px;
+}
+
+
+#btn{
+  
+        width: 135px;
+        height: 100%;
+        /* width: 100%; */
+        /* display: none; */
+        color: rgb(8, 2, 2);
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        /* margin-left: 100px; */
+        background-color: #71e6c7;
+
+      
+}
+
+
+
+
+
+
+
+.login-form-container #form-close{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+.login-form-container.active{
+    top: 0;
+}
+        </style>
+
+
+</body>
+</html>

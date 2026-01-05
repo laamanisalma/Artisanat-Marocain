@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tapis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700 display=swap" rel="stylesheet">
+    <title>Artisanat</title>
+ 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tapis.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="bootstrap-4.6.1/dist/css/bootstrap.css">
+    
+</head>
+<body>
+ 
+<!-------hedre--->
+<header class="hedre">
+  <div class="fas fa-bars" id="bars" ></div>
+  
+     <samp href="#" class="logo" ><span>A</span>RTIS<span>.</span>ANAT</samp>
+    <nav class="nav">
+       <div id="nav-close" class="fas fa-times"></div>
+         <a class="nav-link" href="index.html" onclick="toggleMenu();"><i  class="fa fa-home"></i> Accueil</a>
+         <a class="nav-link "  href="index.html#apropos" onclick="toggleMenu();">A propos </a>
+         <a class="nav-link "  href="index.html#menu" onclick="toggleMenu();">Nos Arts </a>
+         <a class="nav-link "  href="index.html#expert" onclick="toggleMenu();">Nos Experts</a>
+         <a class="nav-link "  href="#" onclick="toggleMenu();">Contact <i class="fas fa-user" id="login-btn"></i></a>
+         
+
+    </nav>
+
+
+    <div class="icons">
+    
+   
+       <a href="PRODAVT.HTML" class="fa fa-shopping-cart sop"></a>
+    <i class="fas fa-search" id="search-btn"></i>
+    <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+    
+
+
+    
+  </div>
+
+   <form action="" class="search-bar-container">
+    <input type="search" id="search-bar">
+    <label for="search-bar" class="fas fa-search"></label>
+    
+
+    </form>
+</header>
+
+<form class="needs-validation" novalidate>
+  <i class="fas fa-times" id="form-close"></i>
+  <div class="vv">
+     <h2>contact</h2>
+    <div class="form- p-1">
+     
+       <input type="text" class="form-control" id="Text1" name="fname" placeholder="Enter first name" required>
+       <div class="valid-feedback">Valid.</div>
+       <div class="invalid-feedback">Entrer votre prenom</div>
+    </div>
+    <div class="form-group p-1">
+
+       <input type="text" class="form-control" id="Text2" placeholder="Enter last name" required>
+       <div class="valid-feedback">Valid.</div>
+       <div class="invalid-feedback">Entrer votre nom</div>
+    </div>
+    <div class="form-group p-1">
+
+       <input type="email" class="form-control" id="email1" placeholder="Enter email" required>
+       <div class="valid-feedback">Valid.</div>
+       <div class="invalid-feedback">Entrer votre email</div>
+    </div>
+    
+
+  
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+    </div>
+</form>
+<SCript>
+// JavaScript to disable form submissions if there are invalid fields
+(function() {
+'use strict';
+window.addEventListener('load', function() {
+   // Get the forms we want to apply validation styles
+   var forms = document.getElementsByClassName('needs-validation');
+   // Loop over them and prevent submission
+   var validation = Array.prototype.filter.call(forms, function(form) {
+     form.addEventListener('submit', function(event) {
+       if (form.checkValidity() === false) {
+         event.preventDefault();
+         event.stopPropagation();
+       }
+       form.classList.add('was-validated');
+     }, false);
+   });
+}, false);
+})();
+
+</script>
+
+    <section class="home-section" id="home">
+        <div class="home-bg"></div>
+        <div class="container">
+            <div class="home-bg"></div>
+            <div class="row min-vh-100 marjin">
+                <div class="home-text" data-aos="fade-up">
+                    <h1>Tapis</h1>
+                   
+    
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__left" data-aos="fade-left">
+              <div class="hero_left_wrapper">
+    
+                <h1 class="hero__heading">Les tapis marocains</h1>
+                <p class="hero__info">
+                    Dans les régions de Rabat, Fès et Tétouan, une panoplie de produits d’artisanat marocain s’offrent à vous dont les tapis qui sont à l'honneur dans les médinas. Des motifs originaux et complexes, tantôt en centre tantôt aux bords selon les usages, qui suscitent une grande réflexion portant sur leurs conceptions. Au Maroc, la valeur d’un tapis est étroitement liée aux nombres de nœuds et des dessins qui le composent, encore faut-il distinguer le tapis citadin du rural !</p>
+            
+              </div>
+            </div>
+            <div class="hero__right" data-aos="fade-right">
+              <div class="hero__imgWrapper">
+                <img src="image/les-tapis-marocains.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <section id="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__right" data-aos="fade-right">
+                <div class="hero__imgWrapper">
+                  <img src="image/artisanat-au-Maroc2.jpg" style="margin-left: -30px;">
+                </div>
+              </div>
+            <div class="hero__left" data-aos="fade-left">
+              <div class="hero_left_wrapper" style="margin-left: 150px;">
+    
+                <h1 class="hero__heading">TAPIS DE COTON</h1>
+                <p class="hero__info" >
+                    Les Tapis Chiffons sont des tapis classiques disponibles dans de nombreux modèles et tailles différents. Le plus courant est peut-être le tapis chiffons placé dans un hall, un escalier, une chambre d'enfant ou à l'extérieur. Dans notre magasin, vous trouverez des tapis chiffons colorés, multicolores et unicolores, et beaucoup d'entre eux offrent de beaux motifs. Tous les tapis chiffons sont en coton.</p>
+                </p>
+            
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>     
+      
+      
+
+
+
+      <section id="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__left" data-aos="fade-left">
+              <div class="hero_left_wrapper">
+    
+                <h1 class="hero__heading">Le tapis berbère Azilal</h1>
+                <p class="hero__info">
+                    Le tapis berbère Azilal est un tapis du sud marocain, originaire de la région du Maroc qui porte le même nom. Ce sont des tapis en laine, fait main avec des motifs alternés.</p>
+              </div>
+            </div>
+            <div class="hero__right" data-aos="fade-right">
+              <div class="hero__imgWrapper">
+                <img src="image/téléchargement (3).jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__right" data-aos="fade-right">
+                <div class="hero__imgWrapper">
+                  <img src="image/images.jpg" style="margin-left: -30px;">
+                </div>
+              </div>
+            <div class="hero__left" data-aos="fade-left" style="margin-left: 150px;">
+              <div class="hero_left_wrapper">
+    
+                <h1 class="hero__heading">Tapie de tétouan</h1>
+                <p class="hero__info">
+                    Les tapis beni ouarain traditionnels sont des tapis fait main du Maroc. Ce sont des tapis en laine naturelle de qualité. Le plus souvent ils sont faits en laine blanche et avec des motifs géométriques marron ou noir. Ils sont très tendances et embellirons votre salon, votre chambre ou quelle que soit la pièce que vous lui choisirez.</p> 
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <script src="bootstrap-4.6.1 (1).zip"></script>
+      <script src="popper.min.js"></script>
+      <script src="jquery-3.6.0.min.js"></script>
+      <script src="mail/jqBootstrapValidation.min.js"></script>
+      <script src="aret.js"></script>
+
+      <!-- JavaScript Libraries -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+      <!-- Contact Javascript File -->
+      <script src="mail/jqBootstrapValidation.min.js"></script>
+      <script src="mail/contact.js"></script>
+  
+      <!-- Template Javascript -->
+    
+  
+
+ </body>
+</html>     

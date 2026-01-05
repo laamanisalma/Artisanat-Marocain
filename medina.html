@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="medina.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700 display=swap" rel="stylesheet">
+    <title>Artisanat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="medina.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-4.6.1/dist/css/bootstrap.css">
+    
+</head>
+<body>
+   <header class="hedre">
+      <div class="fas fa-bars" id="bars" ></div>
+      
+         <samp href="#" class="logo" ><span>A</span>RTIS<span>.</span>ANAT</samp>
+        <nav class="nav">
+           <div id="nav-close" class="fas fa-times"></div>
+             <a class="nav-link" href="index.html" onclick="toggleMenu();"><i  class="fa fa-home"></i> Accueil</a>
+             <a class="nav-link "  href="index.html#apropos" onclick="toggleMenu();">A propos </a>
+             <a class="nav-link "  href="index.html#menu" onclick="toggleMenu();">Nos Arts </a>
+             <a class="nav-link "  href="index.html#expert" onclick="toggleMenu();">Nos Experts</a>
+  
+             <a class="nav-link "  href="#" onclick="toggleMenu();">Contact <i class="fas fa-user" id="login-btn"></i></a>
+             
+  
+        </nav>
+  
+  
+        <div class="icons">
+        
+       
+           <a href="PRODAVT.HTML" class="fa fa-shopping-cart sop"></a>
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+        
+  
+  
+        
+      </div>
+  
+       <form action="" class="search-bar-container">
+        <input type="search" id="search-bar">
+        <label for="search-bar" class="fas fa-search"></label>
+        
+  
+        </form>
+  </header>
+</header>
+
+<form class="needs-validation" novalidate>
+  <i class="fas fa-times" id="form-close"></i>
+  <div class="vv">
+     <h2>Contact</h2>
+    <div class="form- p-1">
+     
+       <input type="text" class="form-control" id="Text1" name="fname" placeholder="Enter votre prenom." required>
+       <div class="valid-feedback">Valid.</div>
+       <div class="invalid-feedback">Enter votre prenom.</div>
+    </div>
+    <div class="form-group p-1">
+
+       <input type="text" class="form-control" id="Text2" placeholder="Entrer votre nom." required>
+       <div class="valid-feedback">Valid.</div>
+       <div class="invalid-feedback">Entrer votre nom.</div>
+    </div>
+    <div class="form-group p-1">
+
+       <input type="email" class="form-control" id="email1" placeholder="Entrer votre email" required>
+       <div class="valid-feedback">Valid.</div>
+       <div class="invalid-feedback">Entrer votre email</div>
+    </div>
+ 
+
+   
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+    </div>
+</form>
+<SCript>
+// JavaScript to disable form submissions if there are invalid fields
+(function() {
+'use strict';
+window.addEventListener('load', function() {
+   // Get the forms we want to apply validation styles
+   var forms = document.getElementsByClassName('needs-validation');
+   // Loop over them and prevent submission
+   var validation = Array.prototype.filter.call(forms, function(form) {
+     form.addEventListener('submit', function(event) {
+       if (form.checkValidity() === false) {
+         event.preventDefault();
+         event.stopPropagation();
+       }
+       form.classList.add('was-validated');
+     }, false);
+   });
+}, false);
+})();
+
+</script>
+
+
+    <section class="home-section" id="home">
+        <div class="home-bg"></div>
+        <div class="container">
+            <div class="home-bg"></div>
+            <div class="row min-vh-100 marjin">
+                <div class="home-text" data-aos="fade-up">
+                    <h1>Médina</h1>
+                   
+    
+                </div>
+            </div>
+        </div>
+      </section>
+      
+
+      <section id="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__left" data-aos="fade-left">
+              <div class="hero_left_wrapper">
+                
+    
+                <h1 class="hero__heading">Médina de Fès</h1>
+                <p class="hero__info">
+                  Fès El-Bali, cœur historique de la ville de Fès, est une médina bouillonnante de couleurs vives, d’architecture et d’artisanat traditionnel.
+
+                  Vieille ville marocaine par excellence, ses murs aux mosaïques arabesques et aux dessins ancrés au fil du temps narrent l’histoire des dynasties marocaines qui s’y sont succédé, laissant libre cours à l’imagination de tous ceux qui la côtoient.
+                  
+                  Fondée par les Idrissides, cette médina abrite non seulement de nombreux palais, mais aussi la plus vieille université au monde Al-Quaraouiyine. Sillonner ses rues, c’est profiter du moindre détail architectural et des œuvres artisanales conçues à la main, c’est également une opportunité de se tremper dans les tréfonds d’une ville à caractère intellectuel et spirituel.</p>
+            
+              </div>
+            </div>
+            <div class="hero__right" data-aos="fade-right">
+              <div class="hero__imgWrapper">
+                <img src="image/la-porte-bab-bou-jeloud.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <section id="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__right" data-aos="fade-right">
+                <div class="hero__imgWrapper">
+                  <img src="image/qasaba_tetouan (1).jpg" style="margin-left: -30px;">
+                </div>
+              </div>
+            <div class="hero__left" data-aos="fade-left">
+              <div class="hero_left_wrapper" style="margin-left: 150px;">
+    
+                <h1 class="hero__heading">Médina de Tétouan</h1>
+                <p class="hero__info" >
+                  À la forme d’une Kasbah, la médina de Tétouan, autrefois appelée Titawin, offre un parfait mélange d'une culture arabo-espagnole.
+
+                  Dans ses ruelles entrelacées, vous vibrerez aux rythmes des traditions espagnoles exogènes qui ont pris place au sein de cette médina.
+                  
+                  Vous savourerez un air de mer mêlé aux chants des oiseaux, vous succomberez au charme de ses trésors ainsi qu'aux cris des vendeurs de souks, invitant les clients à acheter leurs produits.
+                  
+                  L’ancienne médina offre aussi à ses visiteurs un musée ethnographique et un autre archéologique, qui protègent les plus précieux trésors de la ville.
+                </p>
+            
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>     
+      
+      
+
+
+
+      <section id="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__left" data-aos="fade-left">
+              <div class="hero_left_wrapper">
+    
+                <h1 class="hero__heading">Médina de Marrakech</h1>
+                <p class="hero__info">
+                  À l’instar des autres médinas du royaume, la médina de Marrakech, inscrite au patrimoine mondial de l’Unesco depuis 1985, est le quartier le plus historique et le plus visité de cette ville.
+
+                  Encerclée par plusieurs murailles, formant plusieurs portes d’entrée, elle représente le cœur vif de la ville “ocre” qui est réputée pour ses multiples attraits touristiques.
+                  
+                  Pas loin de l’entrée, entre la médina et la nouvelle ville, El koutoubia attire toute notre attention. Entourée de jardins, cette figure emblématique de la ville a été construite par les Almohades et a servi de modèle pour la mosquée de La Giralda à Séville.
+                  
+                  Au cœur de ses vieux quartiers, on retrouve des bazars, des souks traditionnels, des musées, des Riads, des terrasses de café à la fois modernes et traditionnelles, qui invitent tous les visiteurs à profiter des loisirs de la ville. Tous ces endroits s’ouvrent à la place Jamaâ El Fna qui se transforme la nuit en un théâtre en plein air.
+              </div>
+            </div>
+            <div class="hero__right" data-aos="fade-right">
+              <div class="hero__imgWrapper">
+                <img src="image/place-jemaa-el-fna (1).jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__right" data-aos="fade-right">
+                <div class="hero__imgWrapper">
+                  <img src="image//essaouira_0 (1).jpg" style="margin-left: -30px;">
+                </div>
+              </div>
+            <div class="hero__left" data-aos="fade-left" style="margin-left: 150px;">
+              <div class="hero_left_wrapper">
+    
+                <h1 class="hero__heading">Médina d’Essaouira</h1>
+                <p class="hero__info">
+                  Dotée d’un fort potentiel touristique, la médina d'Essaouira est une excellente destination touristique.
+
+                  Inscrite au patrimoine mondial de l’UNESCO depuis 2001, Essaouira est une splendide ville dont les rues et les maisons racontent mille et une histoires! Connue aussi sous le nom de “Mogador”, cette ville fortifiée du milieu du XVIIIe siècle, est délimitée par une muraille de style Vauban. Sa kasbah est aussi un décor à ne pas rater.
+                  
+                  Avec son air mêlé à la brise de l'Atlantique, vous prendrez vite goût à son labyrinthe de ruelles, à ses remparts à caractère romantique, à sa richesse culturelle et ses nombreuses galeries d’art.
+                  
+                  De plus, un beau paysage s’offre à vous en admirant ses bâtiments aux dessins portugais et de magnifiques vues sont au rendez-vous si vous vous rendez à la Skala.
+                  
+                  N’oubliez pas de faire un petit passage au port et au quartier El Mellah pour plonger dans l’histoire de cette ville côtière.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__left" data-aos="fade-left">
+              <div class="hero_left_wrapper">
+    
+                <h1 class="hero__heading">Médina de Rabat</h1>
+                <p class="hero__info">
+                  Au sein de la capitale du Maroc, se niche une ancienne médina au charme irrésistible. Embourbée dans les agitations de ville moderne, c’est à travers ses ruelles, ses murailles fortifiées, sa Kasbah et ses souks qu’on découvre son aspect culturel. Une culture qui s’empare de tous les détails architecturaux, des quotidiens des habitants et de l’art artisanal.
+
+                  Plongez dans l’histoire de Kasbah des Oudayas, ville des Andalous chassés d’Espagne par Philippe III, aux ruelles bleutées semblables à celles de Chefchaouen. Parcourez aussi sa rue Souika et son Souk Sebbate pour une immersion totale dans l’artisanat traditionnel aux senteurs du cuir.
+                  
+                  Dans la rue des Consuls, c’est un autre décor qui s’offre à vos yeux : un tableau de tapis multicolores qui témoignent de la richesse artisanale de la ville. N’oubliez pas, lors de votre balade, de visiter les ruines de Chellah et de faire les touristes aux alentours de la tour Hassan.</p>
+            </div>
+            <div class="hero__right" data-aos="fade-right">
+              <div class="hero__imgWrapper">
+                <img src="image/rabat-medina_1 (1).jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="bootstrap-4.6.1 (1).zip"></script>
+      <script src="popper.min.js"></script>
+      <script src="jquery-3.6.0.min.js"></script>
+      <script src="mail/jqBootstrapValidation.min.js"></script>
+      <script src="aret.js"></script>
+
+
+</body>
+</html>

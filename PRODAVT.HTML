@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="artisanat.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="bootstrap-4.6.1/dist/css/bootstrap.css">
+    
+</head>
+<body>
+    
+<!-------hedre--->
+<header class="hedre">
+    <div class="fas fa-bars" id="bars" ></div>
+    
+       <samp href="#" class="logo" ><span>A</span>RTIS<span>.</span>ANAT</samp>
+      <nav class="nav">
+         <div id="nav-close" class="fas fa-times"></div>
+           <a class="nav-link" href="index.html" onclick="toggleMenu();"><i  class="fa fa-home"></i> Accueil</a>
+           <a class="nav-link "  href="#" onclick="toggleMenu();">A propos </a>
+           <a class="nav-link "  href="#expert" onclick="toggleMenu();">Nos Arts </a>
+           <a class="nav-link "  href="#" onclick="toggleMenu();">Contact <i class="fas fa-user" id="login-btn"></i></a>
+           
+
+      </nav>
+
+
+      <div class="icons">
+      
+     
+         <a href="PRODAVT.HTML" class="fa fa-shopping-cart sop"></a>
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+      
+
+
+      
+    </div>
+
+     <form action="" class="search-bar-container">
+      <input type="search" id="search-bar">
+      <label for="search-bar" class="fas fa-search"></label>
+      
+
+      </form>
+</header>
+
+<form class="needs-validation" novalidate>
+    <i class="fas fa-times" id="form-close"></i>
+    <div class="vv">
+       <h2>contact</h2>
+      <div class="form- p-1">
+       
+         <input type="text" class="form-control" id="Text1" name="fname" placeholder="Enter first name" required>
+         <div class="valid-feedback">Valid.</div>
+         <div class="invalid-feedback">Entrer votre prenom</div>
+      </div>
+      <div class="form-group p-1">
+  
+         <input type="text" class="form-control" id="Text2" placeholder="Enter last name" required>
+         <div class="valid-feedback">Valid.</div>
+         <div class="invalid-feedback">Entrer votre nom</div>
+      </div>
+      <div class="form-group p-1">
+
+         <input type="email" class="form-control" id="email1" placeholder="Enter email" required>
+         <div class="valid-feedback">Valid.</div>
+         <div class="invalid-feedback">Entrer votre email</div>
+      </div>
+      
+  
+     
+     
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+      </div>
+</form>
+<SCript>
+// JavaScript to disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+     // Get the forms we want to apply validation styles
+     var forms = document.getElementsByClassName('needs-validation');
+     // Loop over them and prevent submission
+     var validation = Array.prototype.filter.call(forms, function(form) {
+       form.addEventListener('submit', function(event) {
+         if (form.checkValidity() === false) {
+           event.preventDefault();
+           event.stopPropagation();
+         }
+         form.classList.add('was-validated');
+       }, false);
+     });
+  }, false);
+})();
+
+</script>
+
+
+
+
+
+
+    
+        <div class="login-form-container">
+            <i class="fas fa-times" id="form-close"></i>
+            <form >
+                <div>
+                 <h3>NOS PRODUITS</h3>
+                 <img src="image/savonniere-vague.jpg" width="100px" height="100px">
+                 <h3 >Nam :<span>savonniere-vague</span></h3>
+                 <h3>Quantity  :<span>3</span></h3>
+                <h3>Prix total :<span>99.99$*3</span></h3>
+                 <h3>Pays :<span>Maroc</span></h3>
+                 <h3>Ville :<span>fes</span></h3>
+                </div>
+                 
+                 <input type="submit" id="btn"  value="confirm order"><a href="#login-form-container"></a></input>
+                 <input type="submit" id="btn" value="concelation"><a href="#login-form-container"></a></input>
+            </form>
+       
+       </div>
+       
+    
+        
+        <section class=" container sproduct my-5 pt-5">
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <img class="img-fluid w-100 pb-1" src="image/savonniere-vague.jpg" alt="" id="Img">
+      
+                    
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <h2>Accesseoire</h2>
+                    <h3 class="py-4" id="prosac">savonniere-vague</h3>
+                    <h4 id="prix">$99.99 - $100</h4>
+                    
+                    <input type="number" value="1" width="10px">
+                    <button class="buy-btn"><a href="sinp.html"> Acheter</a></button>
+                    <h4 class="mt-5 mb-5">Product Details</h4>
+                 
+                </div>
+            </div>
+        </section>
+        <section id="featrued" class="my-5 py-5">
+          
+         
+              <hr>
+            
+            <div class="row mx-auto container">
+            
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/babouche-pointue-en-daim-avec-perle.jpg" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+    
+                </div>
+                <h3  id="sac"> babouche-pointue-en-daim</h3>
+                <h4 class="p-price" id="minprix"> $51 - $54</h4>
+                
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/babouche-pointue-imprimee-leopard.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+              <h3 id="sac">babouche-pointue</h3>
+                <h4 class="p-price" id="minprix" > $99.99 - $100</h4>
+                
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/babouche-sarah.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">babouche-sarah</h3>
+                <h4 class="p-price"  id="minprix">$41 - $48</h4>
+    
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/savonniere-vague.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">savonniere-vague</h3>
+                <h4 class="p-price"  id="minprix">$20 - $35</h4>
+              
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/tajine-henne.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">tajine-henne</h3>
+                <h4 class="p-price"  id="minprix">$55 - $60</h4>
+                
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/tajine-decoupe.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">tajine-decoupe</h3>
+                <h4 class="p-price"  id="minprix">$50 - $55</h4>
+              
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/sac-a-voyage-couleur-miel.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">sac-a-voyage-</h3>
+                <h4 class="p-price" id="minprix">$50 - $55</h4>
+                
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/porte-monnaie-bouton.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">porte-monnaie-bouton</h3>
+                <h4 class="p-price"  id="minprix">$50 - $55</h4>
+                
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/petit-sac-a-main-en-cuir.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">petit-sac</h3>
+                <h4 class="p-price"  id="minprix">$50 - $55</h4>
+                
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/panier-coeur.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">panier-coeur</h3>
+                <h4 class="p-price"  id="minprix">$80 - $57</h4>
+                
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/panier-losange.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">panier-losange</h3>
+                <h4 class="p-price"  id="minprix">$88 - $77</h4>
+                
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/panier-marocain-a-pompons.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">panier-marocain</h3>
+                <h4 class="p-price"  id="minprix">$88 - $77</h4>
+                
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/sac-tapis-berbere (1).jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">sac-tapis-berbere</h3>
+                <h4 class="p-price"  id="minprix">$88 - $77</h4>
+                
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/sac-tapis-berbere.jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">sac-tapis-berbere</h3>
+                <h4 class="p-price"  id="minprix">$88 - $77</h4>
+                
+              </div>
+              <div class="product text-center col-lg-4 col-md-6 col-12">
+                <img class="img-fluid mb-3" src="image/sac-tapis-berbere (2).jpg" alt="">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+        
+                </div>
+                <h3 id="sac">sac-tapis-berbere</h3>
+                <h4 class="p-price"  id="minprix">$88 - $77</h4>
+                
+              </div>
+              
+              </div>
+
+            <!-- JavaScript Libraries -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+            <!-- Contact Javascript File -->
+            <script src="mail/jqBootstrapValidation.min.js"></script>
+            <script src="mail/contact.js"></script>
+        
+            <!-- Template Javascript -->
+            <script src="js/main.js"></script>
+            <script src="aret.js"></script>
+        
+    
+              <script>
+             
+                var prix=document.querySelector("#prix");
+                var minprix=document.querySelectorAll("#minprix");
+    
+                var prosac=document.querySelector("#prosac");
+                var sac=document.querySelectorAll("#sac");
+    
+                document.getElementsByClassName("img-fluid")[0].onclick = function() {
+                document.getElementById("Img").src = document.getElementsByClassName("img-fluid")[0].src;
+                prosac.innerHTML=sac[-1].innerHTML;
+                prix.innerHTML=document.querySelectorAll("#minprix")[-1].innerHTML;
+                }
+                document.getElementsByClassName("img-fluid")[1].onclick = function() {
+                document.getElementById("Img").src = document.getElementsByClassName("img-fluid")[1].src;
+                prosac.innerHTML=sac[0].innerHTML;
+                prix.innerHTML=document.querySelectorAll("#minprix")[0].innerHTML;
+                }
+    
+                document.getElementsByClassName("img-fluid")[2].onclick = function() {
+                document.getElementById("Img").src = document.getElementsByClassName("img-fluid")[2].src;
+                prosac.innerHTML=sac[-1].innerHTML;
+                prix.innerHTML=document.querySelectorAll("#minprix")[-1].innerHTML;
+                }
+    
+                document.getElementsByClassName("img-fluid")[3].onclick = function() {
+                document.getElementById("Img").src = document.getElementsByClassName("img-fluid")[3].src;
+                prosac.innerHTML=sac[2].innerHTML;
+                prix.innerHTML=document.querySelectorAll("#minprix")[2].innerHTML;
+                }
+    
+                document.getElementsByClassName("img-fluid")[4].onclick = function() {
+                document.getElementById("Img").src = document.getElementsByClassName("img-fluid")[4].src;
+                prosac.innerHTML=sac[3].innerHTML;
+                prix.innerHTML=document.querySelectorAll("#minprix")[3].innerHTML;
+                }
+    
+                document.getElementsByClassName("img-fluid")[5].onclick = function() {
+                document.getElementById("Img").src = document.getElementsByClassName("img-fluid")[5].src;
+                prosac.innerHTML=sac[4].innerHTML;
+                prix.innerHTML=document.querySelectorAll("#minprix")[4].innerHTML;
+                }
+    
+                document.getElementsByClassName("img-fluid")[6].onclick = function() {
+                document.getElementById("Img").src = document.getElementsByClassName("img-fluid")[6].src;
+                prosac.innerHTML=sac[5].innerHTML;
+                prix.innerHTML=minprix[5].innerHTML;
+                }
+    
+                document.getElementsByClassName("img-fluid")[7].onclick = function() {
+                document.getElementById("Img").src = document.getElementsByClassName("img-fluid")[7].src;
+                prosac.innerHTML=sac[6].innerHTML;
+                prix.innerHTML=minprix[6].innerHTML;
+                }
+    
+                document.getElementsByClassName("img-fluid")[8].onclick = function() {
+                document.getElementById("Img").src = document.getElementsByClassName("img-fluid")[8].src;
+                prosac.innerHTML=sac[7].innerHTML;
+                prix.innerHTML=minprix[7].innerHTML;
+                }
+    
+                // document.getElementsByClassName("img-fluid")[9].onclick = function() {
+                // document.getElementById("Img").src = document.getElementsByClassName("img-fluid")[9].src;
+                // prosac.innerHTML=sac[9].innerHTML;
+                // prix.innerHTML=minprix[9].innerHTML;}
+    
+    
+                var Btn = document.querySelector("#cnfirm");
+    var login = document.querySelector('.login-form-container');
+    var Close = document.querySelector('#form-close');
+    
+    Btn.addEventListener('click', function(){
+        login.classList.add('active'),true;
+    });
+    
+    
+    Close.addEventListener('click',function(){
+        login.classList.remove('active'),true;
+    });
+            </script>
+            <style>
+        .login-form-container{
+        position: fixed;
+        top: -120%;
+        left: 0;
+        z-index: 10000;
+        min-height: 100vh;
+        width: 100%;
+        background: rgb(0, 0, 0,.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .login-form-container form{
+        margin: 2rem;
+        padding: 1.5rem 2rem;
+        border-radius: 20px;
+        background: #fff;
+        width: 30rem; 
+    }
+    .login-form-container form img{
+        border: #44425A solid 1.5px;
+        border-radius: 5px;
+    }
+    .login-form-container span{
+        color: #44425A;
+    }
+    
+    .login-form-container h3{
+        font-size: 1.5rem;
+        /* font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; */
+        color: rgb(20, 1, 1);
+        /* text-shadow: 1px 2px black; */
+        text-transform: uppercase; 
+        /* text-align: center; */
+        /* padding: 0.5rem ; */
+    }
+    .login-form-container form .box{
+        width: 90%;
+        padding: 1rem;
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        margin: .4rem .2rem;
+        border: 1px solid rgba(255, 123, 0, 0.879);
+        text-transform: none;
+        border-radius: 15px;
+    }
+    
+    
+    #btn{
+      
+            width: 135px;
+            height: 100%;
+            /* width: 100%; */
+            /* display: none; */
+            color: rgb(8, 2, 2);
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            /* margin-left: 100px; */
+            background-color: #71e6c7;
+    
+          
+    }
+    
+    
+    
+    
+    
+    
+    
+    .login-form-container #form-close{
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    .login-form-container.active{
+        top: 0;
+    }
+            </style>
+            <script src="aret.js"></script>
+            <script src="jquery-3.6.0.min.js"></script>
+            <script src="bootstrap-4.6.1 (1).zip"></script>
+            <script src="popper.min.js"></script>
+</body>
+</html>
